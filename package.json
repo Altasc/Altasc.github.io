@@ -13,7 +13,7 @@
     "astro": "astro",
     "lint": "biome check --write ./src",
     "biome:check": "biome check ./src",
-    "biome:format": "biome format ./src",
+    "biome:format": "biome format --write ./src",
     "biome:summary": "biome check --reporter summary ./src",
     "format": "biome format --write ./src",
     "check-all": "pnpm astro-check && pnpm biome:check"
