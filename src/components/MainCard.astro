@@ -47,8 +47,11 @@ const accessibleHelpText = `${helpText}: ${title}`;
           />
         </div>
 
+        {/* Bottom gradient overlay to improve title readability */}
+        <div class="pointer-events-none absolute inset-x-0 bottom-0 h-1/4 bg-gradient-to-t from-black/75 via-black/35 to-black/0" />
+
         {/* Flex container for Title and Button */}
-        <div class="absolute bottom-4 left-4 right-4 lg:bottom-6 lg:left-6 lg:right-6 flex items-end justify-between gap-4">
+        <div class="absolute z-10 bottom-4 left-4 right-4 lg:bottom-6 lg:left-6 lg:right-6 flex items-end justify-between gap-4">
           {/* Title */}
           <!-- <div class="inline-block bg-black/60 backdrop-blur-md px-4 py-2 rounded-xl border border-white/40 shadow-lg">
             <h1 class="text-xl sm:text-2xl lg:text-4xl font-bold text-white">{title}</h1>
@@ -97,6 +100,9 @@ const accessibleHelpText = `${helpText}: ${title}`;
             </div>
           )}
         </div>
+
+        {/* Bottom gradient overlay to improve title readability */}
+        <div class="pointer-events-none absolute inset-x-0 bottom-0 h-1/4 bg-gradient-to-t from-black/75 via-black/35 to-black/0" />
 
         {/* Flex container for Title and Button */}
         <div class="absolute bottom-4 left-4 right-4 lg:bottom-6 lg:left-6 lg:right-6 flex items-end justify-between gap-4">
